@@ -25,6 +25,7 @@ function App () {
           {
             gifs.map(gif => (
               <ImageCard
+                key={gif.id}
                 tittle={gif.tittle}
                 url={gif.images.fixed_height.url}
               />
